@@ -1,31 +1,29 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Typist from 'react-typist-component';
+// import Typist from "react-typist-component";
 import { Jumbotron } from "./migration";
 
 const MainBody = React.forwardRef(
-  ({ gradient, title, message, icons }, ref) => {
+  ({ /*gradient,*/ title, message, icons }, ref) => {
     return (
       <Jumbotron
         fluid
         id="home"
         style={{
-          background: `linear-gradient(136deg,${gradient})`,
+          background: "#e9ecef",
           backgroundSize: "1200% 1200%",
         }}
-        className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
+        // className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
         <div id="stars"></div>
         <Container className="text-center">
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
-          <Typist>
-            <div className="lead typist">
-              {message}
-            </div>
-          </Typist>
-          <div className="p-5">
+          {/* <Typist>
+            <div className="lead typist">{message}</div>
+          </Typist> */}
+          {/* <div className="p-5">
             {icons.map((icon, index) => (
               <a
                 key={`social-icon-${index}`}
@@ -37,14 +35,15 @@ const MainBody = React.forwardRef(
                 <i className={`fab ${icon.image}  fa-3x socialicons`} />
               </a>
             ))}
-          </div>
+          </div> */}
           <a
             className="btn btn-outline-light btn-lg "
-            href="#aboutme"
+            href="../../editable-stuff/resume.pdf"
             role="button"
+            target="_blank"
             aria-label="Learn more about me"
           >
-            More about me
+            Resume
           </a>
         </Container>
       </Jumbotron>
