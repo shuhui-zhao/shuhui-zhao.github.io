@@ -6,7 +6,7 @@ import {
   about,
   repos,
   leadership,
-  skills,
+  // skills,
   getInTouch,
   experiences,
 } from "./editable-stuff/config.js";
@@ -15,22 +15,21 @@ import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Skills from "./components/home/Skills";
+// import Skills from "./components/home/Skills";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
-
 import Experience from "./components/home/Experience";
 
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
       <MainBody
-        gradient={mainBody.gradientColors}
+        // gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
-        icons={mainBody.icons}
+        // message={mainBody.message}
+        // icons={mainBody.icons}
         ref={ref}
       />
       {about.show && (
@@ -59,13 +58,13 @@ const Home = React.forwardRef((props, ref) => {
           imageSize={leadership.imageSize}
         />
       )}
-      {skills.show && (
+      {/* {skills.show && (
         <Skills
           heading={skills.heading}
           hardSkills={skills.hardSkills}
           softSkills={skills.softSkills}
         />
-      )}
+      )} */}
     </>
   );
 });

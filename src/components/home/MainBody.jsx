@@ -2,9 +2,10 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 // import Typist from "react-typist-component";
 import { Jumbotron } from "./migration";
+import { about } from "../../editable-stuff/config.js";
 
 const MainBody = React.forwardRef(
-  ({ /*gradient,*/ title, message, icons }, ref) => {
+  ({ /*gradient,*/ title /*message, icons*/ }, ref) => {
     return (
       <Jumbotron
         fluid
@@ -15,7 +16,7 @@ const MainBody = React.forwardRef(
         }}
         // className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
-        <div id="stars"></div>
+        {/* <div id="stars"></div> */}
         <Container className="text-center">
           <h1 ref={ref} className="display-1">
             {title}
@@ -38,7 +39,7 @@ const MainBody = React.forwardRef(
           </div> */}
           <a
             className="btn btn-outline-light btn-lg "
-            href="../../editable-stuff/resume.pdf"
+            href={about.resume}
             role="button"
             target="_blank"
             aria-label="Learn more about me"
