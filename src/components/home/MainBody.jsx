@@ -38,10 +38,12 @@ const MainBody = React.forwardRef(
             ))}
           </div> */}
           <a
-            className="btn btn-outline-light btn-lg "
+            className="btn btn-outline-dark btn-lg "
             href={about.resume}
             role="button"
             target="_blank"
+            rel="noreferrer noopener"
+            role="button"
             aria-label="Learn more about me"
           >
             Resume
