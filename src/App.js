@@ -27,19 +27,15 @@ const Home = React.forwardRef((props, ref) => {
     <>
       <MainBody
         // gradient={mainBody.gradientColors}
-        title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
+        title={`Hi, I'm ${mainBody.firstName} `}
         // message={mainBody.message}
         // icons={mainBody.icons}
         ref={ref}
+        link={about.imageLink}
+        imgSize={about.imageSize}
       />
       {about.show && (
-        <AboutMe
-          heading={about.heading}
-          message={about.message}
-          link={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
-        />
+        <AboutMe heading={about.heading} message={about.message} />
       )}
       {/* {experiences.show && <Experience experiences={experiences} />} */}
       {repos.show && (
