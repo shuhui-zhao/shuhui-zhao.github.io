@@ -54,7 +54,7 @@ const about = {
   imageLink: require("../editable-stuff/photo.JPG"),
   imageSize: 375,
   message:
-    "My name is palceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholderpalceholder",
+    "I graduated from Carleton University in 2021 with a master degree in Statistics. I started my career as a IT consultant in MNP - My work frequently involves validating calculation models for financial technology products using VBA and Python and conducting data reconciliations using PowerBI during transformations between legacy and new systems. [new paragraph]I started to pursue programming independently using my spare time. I began with web development fundamentals (HTML, CSS, JavaScript/TypeScript React, Svelte) and progressed to full-stack development using Javascript/TypeScript Node.js and Python FastAPI. Working across different technology stacks heightened my interest in understanding the core principles of computer science. ",
   resume: require("../editable-stuff/resume.pdf"),
 };
 

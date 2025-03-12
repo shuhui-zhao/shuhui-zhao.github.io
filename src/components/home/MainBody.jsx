@@ -43,7 +43,6 @@ const MainBody = React.forwardRef(
             role="button"
             target="_blank"
             rel="noreferrer noopener"
-            role="button"
             aria-label="Learn more about me"
           >
             Resume
