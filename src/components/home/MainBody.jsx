@@ -2,7 +2,7 @@ import React from "react";
 // import Container from "react-bootstrap/Container";
 // import Typist from "react-typist-component";
 import { Jumbotron } from "./migration";
-import { about } from "../../editable-stuff/config.js";
+import { about, getInTouch } from "../../editable-stuff/config.js";
 // import Col from "react-bootstrap/Col";
 // import Row from "react-bootstrap/Row";
 
@@ -31,9 +31,9 @@ const MainBody = React.forwardRef(
                   {" "}
                   <a
                     className="btn btn-outline-dark btn-lg my-1 mx-3"
-                    href={process.env.PUBLIC_URL + "/#contact"}
+                    href={`mailto:${getInTouch.email}`}
                   >
-                    Contract Me
+                    Contact Me
                   </a>
                   <a
                     className="btn btn-outline-dark btn-lg my-1 mx-3"

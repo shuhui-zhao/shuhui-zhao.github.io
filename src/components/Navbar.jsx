@@ -70,14 +70,6 @@ const Navigation = React.forwardRef((props, ref) => {
               Projects
             </NavLink>
           )}
-          {/* <NavLink
-            className="nav-item lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Resume
-          </NavLink> */}
           <NavLink
             className="nav-item lead"
             href={process.env.PUBLIC_URL + "/#contact"}
@@ -93,6 +85,14 @@ const Navigation = React.forwardRef((props, ref) => {
             </NavLink>
           )} */}
         </Nav>
+        <NavLink
+          className="nav-item lead"
+          href={about.resume}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Resume
+        </NavLink>
       </Navbar.Collapse>
     </Navbar>
   );

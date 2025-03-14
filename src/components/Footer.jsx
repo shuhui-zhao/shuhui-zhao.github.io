@@ -7,7 +7,7 @@ const Footer = (props) => {
 
   return (
     <Jumbotron fluid id="contact" className="bg-light m-0">
-      <footer style={bgStyle} className="bg-light m-0 text-center ">
+      <footer style={bgStyle} className="bg-light m-0 text-center">
         <Container>
           {props.children}
           <a
